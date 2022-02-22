@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#myForm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
