@@ -5,6 +5,9 @@ form.addEventListener('submit', function(e){
  
   const formData = new FormData();
   const imagefile = document.querySelector('#file');
+  const name = document.querySelector('#name').value;
+
+  formData.append("name", name);
 
   for (let file of imagefile.files) {
     formData.append(file.name, file);

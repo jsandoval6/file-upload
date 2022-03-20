@@ -17,6 +17,7 @@ app.use(fileUpload({
 
 app.post('/', async (req, res) => {
     console.log(req.files);
+    console.log(req.body);
     for (let file in req.files) {
         try {
             const name = req.files[file];
@@ -26,7 +27,7 @@ app.post('/', async (req, res) => {
         }
        
     }
-    res.sendStatus(200);
+    res.redirect('/');
 });
 
 app.listen(3000, () => {
